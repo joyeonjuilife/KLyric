@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  font-family: "Nunito", sans-serif;
+}
+
+.quiz-page {
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 72px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 64px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+
+  background-image: linear-gradient(
+    90deg,
+    #2283c9,
+    #b43613
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  cursor: pointer;
+}
+
+.nav-center {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav-center .active {
+  color: #2283c9;
+  border-bottom: 2px solid #2283c9;
+  padding-bottom: 4px;
+}
+
+.profile img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* HERO */
+
+.quiz-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px 180px;
+}
+
+.quiz-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+  color: #111;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.quiz-content h1 span {
+  color: #b43613;
+}
+
+.quiz-content p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #707070;
+
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* QUESTION CARD */
+
+.question-list {
+  margin-top: 56px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.question-card {
+  width: 100%;
+
+  background: white;
+  border-radius: 28px;
+  padding: 32px;
+
+  border: 1px solid #f0f0f0;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  text-align: left;
+
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.question-badge {
+  background: #e7f2fc;
+  color: #2283c9;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card-top span {
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.question-text {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #222;
+
+  margin-bottom: 24px;
+}
+
+.question-card input {
+  width: 100%;
+  height: 64px;
+
+  border-radius: 999px;
+
+  border: 1.5px solid #d7d3e2;
+
+  padding: 0 24px;
+
+  outline: none;
+
+  font-size: 16px;
+}
+
+.question-card input:focus {
+  border-color: #2283c9;
+}
+
+.correct-card {
+  border: 2px solid #2ecc71;
+}
+
+.wrong-card {
+  border: 2px solid #e74c3c;
+}
+
+.answer-result {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.correct-text {
+  color: #2ecc71;
+}
+
+.wrong-text {
+  color: #e74c3c;
+}
+
+/* FOOTER */
+
+.quiz-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 180px;
+
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.04);
+
+  z-index: 999;
+}
+
+.score-section {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.correct {
+  color: #2283c9;
+}
+
+.wrong {
+  color: #b43613;
+}
+
+.divider {
+  width: 1px;
+  height: 42px;
+  background: #dadada;
+}
+
+.check-btn {
+  margin-left: auto;
+
+  width: 260px;
+  height: 56px;
+
+  border: none;
+  border-radius: 999px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.check-btn.disabled {
+  background: #d9d9d9;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.check-btn.active {
+  background: linear-gradient(
+    90deg,
+    #2283c9 0%,
+    #b43613 100%
+  );
+  cursor: pointer;
+}
+
+.check-btn.active:hover {
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* 객관식 뜻 퀴즈 (완벽 좌측 밀착) */
+/* ========================= */
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  /* 💡 부모의 정렬 속성을 무시하고 무조건 왼쪽 정렬로 리셋 */
+  align-items: stretch !important; 
+  text-align: left !important;
+  margin-top: 20px;
+}
+
+.meaning-question {
+  /* 💡 글자가 중앙이나 어정쩡한 곳에 뜨지 못하도록 가로 폭을 100% 꽉 채움 */
+  display: block !important;
+  width: 100% !important;
+  /* 💡 강제로 왼쪽 끝 정렬 */
+  text-align: left !important; 
+  
+  font-size: 18px;
+  font-weight: 700;
+  color: #555555;
+  
+  /* 마진과 패딩을 조절해 완벽한 좌측 레이아웃 구성 */
+  margin: 0 0 16px 0 !important;
+  padding: 0 0 12px 0 !important;
+  
+  /* 구분선이 카드의 왼쪽 끝부터 오른쪽 끝까지 시원하게 뻗도록 설정 */
+  border-bottom: 1px dashed #ececec !important; 
+}
+
+.option-btn {
+  width: 100%;
+  min-height: 56px;
+  border: 1.5px solid #d7d3e2;
+  border-radius: 18px;
+  background: white;
+  padding: 14px 24px;
+  
+  /* 버튼 안의 텍스트(정오, 새벽, 자정 등)도 왼쪽 정렬 */
+  text-align: left !important; 
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  border-color: #2283c9;
+  background: #f8fbff;
+}
+
+.option-btn.selected {
+  background: #2283c9;
+  color: white;
+  border-color: #2283c9;
+}

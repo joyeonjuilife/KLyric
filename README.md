@@ -36,7 +36,7 @@
 
 <br>
 
-## 🛠 기술 스택 및 데이터 구조
+## 기술 스택 및 데이터 구조
 * **Frontend**: HTML5, CSS3, JavaScript (Vanilla JS)
 * **디자인 및 UI**: Figma (피그마를 활용한 반응형 GUI 설계: 데스크탑 - 태블릿 - 모바일 앱)
 * **데이터 관리**: 별도의 외부 Database를 사용하지 않고, 브라우저의 **LocalStorage**와 **JavaScript 변수**만을 활용하여 사용자의 학습 데이터(맞춘 문제/틀린 문제 수)를 안전하게 저장하고 관리합니다.

@@ -1,16 +1,54 @@
-# React + Vite
+# KLyric
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **"K-POP 영어 가사로 쉽고 재미있게 배우는 퀴즈형 영어 학습 웹 플랫폼"**
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 팀원 소개 및 역할
+* **조연주** : 개발 (Development)
+* **위은서** : 기획 및 디자인 (Planning & Design)
 
-## React Compiler
+<br>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 프로젝트 소개
+* **주제 설명**: K-POP 영어 가사를 활용하여 영어를 쉽고 재미있게 학습할 수 있는 퀴즈형 웹 플랫폼입니다. 사용자는 좋아하는 K-POP 가사 속 빈칸을 맞추거나 뜻을 선택하는 문제를 풀며, 기존의 지루한 암기식 학습에서 벗어나 영어 단어와 표현을 자연스럽게 습득할 수 있습니다.
+* **기획 배경**: 많은 사람들이 영어 공부를 어렵고 지루하게 느껴 학습 지속성이 떨어진다는 문제점을 발견했습니다. 이를 해결하고자 전 세계적으로 인기가 많고 친숙한 'K-POP'을 접목하여, 게임처럼 즐겁게 몰입할 수 있는 서비스 서비스를 기획하게 되었습니다.
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 주요 기능 (Features)
+1. **영어 가사 빈칸 퀴즈 기능**
+   * K-POP 영어 가사의 일부를 빈칸으로 제공합니다.
+   * 사용자가 올바른 단어를 직접 입력하여 정답을 맞추며 반복 학습 효과를 얻습니다.
+2. **가사 뜻 선택 퀴즈 기능**
+   * 영어 가사 문장의 의미를 객관식 보기로 제공합니다.
+   * 올바른 번역 및 의미를 선택함으로써 문장 이해력과 독해 능력을 향상시킵니다.
+3. **결과 화면 및 피드백**
+   * 퀴즈 완료 후 맞춘 문제와 틀린 문제 개수를 점수화하여 사용자가 자신의 학습 수준을 직접 확인할 수 있습니다.
+
+<br>
+
+## 주요 효과
+* K-POP 음악을 활용하여 영어 학습에 대한 흥미와 집중도 극대화
+* 퀴즈 형식을 통한 자연스러운 단어 및 표현의 반복 학습 유도
+* 게임 요소를 통한 영어 공부의 지속성 및 자기주도 학습 습관 형성
+* 교과서 위주가 아닌, 실제 가사에서 자주 사용되는 유용한 실생활 표현 습득
+
+<br>
+
+## 🛠 기술 스택 및 데이터 구조
+* **Frontend**: HTML5, CSS3, JavaScript (Vanilla JS)
+* **디자인 및 UI**: Figma (피그마를 활용한 반응형 GUI 설계: 데스크탑 - 태블릿 - 모바일 앱)
+* **데이터 관리**: 별도의 외부 Database를 사용하지 않고, 브라우저의 **LocalStorage**와 **JavaScript 변수**만을 활용하여 사용자의 학습 데이터(맞춘 문제/틀린 문제 수)를 안전하게 저장하고 관리합니다.
+
+<br>
+
+## 문제점 및 향후 연구 과제
+* **예상되는 문제점 & 해결책**
+  * 사용자의 영어 실력 차이로 인한 난이도 조절의 어려움이 발생할 수 있습니다.
+  * *대응 방안:* 대중적으로 자주 사용되는 일상 표현과 비교적 직관적이고 익숙한 아이돌 곡의 가사를 중심으로 초기 문제를 구성하여 진입 장벽을 낮출 예정입니다.
+* **향후 연구 과제 (Next Steps)**
+  * 사용자의 영어 수준별 선택 학습이 가능한 난이도 세분화 연구
+  * Web Audio API를 활용한 음성/노래 재생 기반의 듣기(Listening) 퀴즈 기능 확장
+  * 사용자간 랭킹 시스템 및 멀티플레이 퀴즈 기능 도입 연구
+  * 다양한 글로벌 음악 장르 및 다국어(한국어 학습 등) 콘텐츠로의 확장 가능성 연구

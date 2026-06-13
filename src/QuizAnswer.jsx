@@ -1,4 +1,6 @@
 import "./QuizAnswer.css";
+import PROFILE from"./assets/profile.jpg"
+
 import {
   FiCheckCircle,
   FiXCircle,
@@ -41,7 +43,7 @@ export default function QuizAnswer() {
 
         <div className="profile">
           <img
-            src="https://i.pravatar.cc/100"
+            src={PROFILE}
             alt="profile"
           />
         </div>

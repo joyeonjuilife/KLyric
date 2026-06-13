@@ -8,7 +8,7 @@ const defaultQuestions = [
     id: 1,
     type: "blank",
     artist: "BOYNEXTDOOR - VIRAL",
-    lyric: `"Sorry", "___ ___" Hate these words Maybe I still...`,
+    lyric: `"Sorry", "____ ___" Hate these words Maybe I still...`,
     answer: "Love you",
   },
   {
@@ -73,7 +73,7 @@ In the midnight 별처럼 감정들이 쏟아져"`,
     artist: "HEARTS2HEARTS - RUDE!",
     lyric: `"You know what he said to me? What?
     He was like,
-    “__ _ __ ___”
+    “___ ___ __ ____”
     And I was like,
     “Boy, does it look like I could care? I couldn't even care less!"`,
     answer : "You are so rude"
@@ -100,7 +100,7 @@ In the midnight 별처럼 감정들이 쏟아져"`,
     type :"blank",
     artist : "IVE - BANG BANG",
     lyric : `"I be going out with a bang
-    ______ __ ___
+    _______ __ ____
     This is my way
     Ayayaya I be going out with a bang"`,
     answer : "Shaking my head"

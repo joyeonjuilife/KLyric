@@ -8,8 +8,8 @@ const defaultQuestions = [
     id: 1,
     type: "blank",
     artist: "BOYNEXTDOOR - VIRAL",
-    lyric: `"Sorry", "________" Hate these words Maybe I still...`,
-    answer: "love you",
+    lyric: `"Sorry", "___ ___" Hate these words Maybe I still...`,
+    answer: "Love you",
   },
   {
     id: 2,
